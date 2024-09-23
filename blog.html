@@ -7,6 +7,10 @@
     <title>About - DOM</title>
     <!-- Tailwind css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!--Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,29 +69,42 @@
 
 
     <main>
-        <section class="">
-            <div>
-                <h2>Frequently Asked Questions <i class="fa-solid fa-question"></i></h2>
+        <section class="w-10/12 mx-auto mt-12">
+            <div class="mb-6">
+                <h2 class="font-extrabold text-3xl">Frequently Asked Questions <i
+                        class="fa-regular fa-circle-question text-5xl"></i></h2>
             </div>
-            <div class="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" checked="checked" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                <div class="collapse-content">
-                    <p>hello</p>
+            <!-- accordion -->
+            <div class="space-y-2">
+                <div class="collapse collapse-arrow  border-2">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">1. What is the Document Object Model (DOM)?</div>
+                    <div class="collapse-content">
+                        <p>Answer here</p>
+                    </div>
                 </div>
-            </div>
-            <div class="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                <div class="collapse-content">
-                    <p>hello</p>
+                <div class="collapse collapse-arrow  border-2">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">2. How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                        <p>Answer here</p>
+                    </div>
                 </div>
-            </div>
-            <div class="collapse collapse-arrow bg-base-200">
-                <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                <div class="collapse-content">
-                    <p>hello</p>
+                <div class="collapse collapse-arrow  border-2">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">3. What is event delegation in the context of the
+                        DOM, and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p>Answer here</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow  border-2">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">4. How do you manipulate an element's attributes and
+                        styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <p>Answer here</p>
+                    </div>
                 </div>
             </div>
         </section>
