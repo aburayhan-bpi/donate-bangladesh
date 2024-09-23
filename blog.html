@@ -3,14 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=	">
-    <title>About - DOM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
     <!-- Tailwind css -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <!-- Fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!--Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,17 +32,19 @@
             }
         }
     </script>
+
 </head>
 
 <body class="font-lexend">
-
+    <!-- Header section start -->
+    <!-- sticky top-0 bg-[#F9F7F3]/50 backdrop-blur-md -->
     <header class="sticky top-0  backdrop-blur-md">
         <!-- Navbar start -->
         <div class="bg-[#f9f7f394] pt-4 pb-7 backdrop-blur-md">
             <div class="navbar w-10/12 mx-auto flex flex-col md:flex-row justify-between">
                 <div class="navbar-start order-2 md:order-none mt-4 md:mt-0 justify-center md:justify-start">
                     <a href="index.html" class="md:w-3/6 lg:w-2/6 xl:w-1/6">
-                        <button class="btn bg-primary font-bold text-base">Home</button>
+                        <button class="btn bg-primary font-bold text-base">Blog</button>
                     </a>
                 </div>
                 <div class="navbar-center order-1 md:order-none">
@@ -66,49 +64,71 @@
         </div>
         <!-- Navbar end -->
     </header>
-
-
+    <!-- Header section end -->
     <main>
-        <section class="w-10/12 mx-auto mt-12">
-            <div class="mb-6">
-                <h2 class="font-extrabold text-3xl">Frequently Asked Questions <i
-                        class="fa-regular fa-circle-question text-5xl"></i></h2>
+        <section id="donation-section" class="w-10/12 mx-auto mt-10 space-y-3">
+            <h2 class="font-bold text-2xl">Frequently Asked Questions<span class="font-bold text-4xl italic">?</span>
+            </h2>
+            <div class="collapse collapse-arrow border-2 w-full">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">1. What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The DOM(Document Object Model) is a kind of structure of a webpage. It allows JavaScript to to
+                        many work. Such as, changing the content, change or create HTML elements, buttons desing and
+                        also allow to add styles and many more.</p>
+                </div>
             </div>
-            <!-- accordion -->
-            <div class="space-y-2">
-                <div class="collapse collapse-arrow  border-2">
-                    <input type="radio" name="my-accordion-2" checked="checked" />
-                    <div class="collapse-title text-xl font-medium">1. What is the Document Object Model (DOM)?</div>
-                    <div class="collapse-content">
-                        <p>Answer here</p>
-                    </div>
+            <div class="collapse collapse-arrow border-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">2. How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>
+                        <span>Well, there is some way to select an element from the DOM.</span>
+                    <ul class="text-sm">
+                        <li>1. document.getElementById()</li>
+                        <li>2. document.getElementsByClassName()</li>
+                        <li>3. document.getElementsByTagName()</li>
+                        <li>4. document.querySelector()</li>
+                        <li>5. document.querySelectorAll(), etc.</li>
+                    </ul>
+                    </p>
+
                 </div>
-                <div class="collapse collapse-arrow  border-2">
-                    <input type="radio" name="my-accordion-2" checked="checked" />
-                    <div class="collapse-title text-xl font-medium">2. How do you select an element from the DOM?</div>
-                    <div class="collapse-content">
-                        <p>Answer here</p>
-                    </div>
+            </div>
+            <div class="collapse collapse-arrow border-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">3. What is event delegation in the context of the DOM,
+                    and why is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a JavaScript technique where we can add an event listener to a parent element instead of adding event listener to individual elements. When any event is occurs on a child element's it bubble up to his parent.</p>
                 </div>
-                <div class="collapse collapse-arrow  border-2">
-                    <input type="radio" name="my-accordion-2" checked="checked" />
-                    <div class="collapse-title text-xl font-medium">3. What is event delegation in the context of the
-                        DOM, and why is it useful?</div>
-                    <div class="collapse-content">
-                        <p>Answer here</p>
-                    </div>
-                </div>
-                <div class="collapse collapse-arrow  border-2">
-                    <input type="radio" name="my-accordion-2" checked="checked" />
-                    <div class="collapse-title text-xl font-medium">4. How do you manipulate an element's attributes and
-                        styles using the DOM?</div>
-                    <div class="collapse-content">
-                        <p>Answer here</p>
-                    </div>
+            </div>
+            <div class="collapse collapse-arrow border-2">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">4. How do you manipulate an element's attributes and
+                    styles using the DOM?</div>
+                <div class="collapse-content">
+                    <p>
+                        <span>We can manipulate an element's attribute or style by following these methods:</span>
+                    <ul class="text-sm">
+                        <li>1. element.setAttribute('attribute', 'value')</li>
+                        <li>1. element.removeAttribute('value')</li>
+                        <li>2. element.style.property = 'value'</li>
+                    </ul>
+                    <p>We can add style to element's using element.style.property = 'value' method.</p>
+                    <p>We can remove attribute from element's using element.removeAttribute('value') method. etc.</p>
+                    </p>
                 </div>
             </div>
         </section>
+
+
     </main>
+
+
+
+    <script src="js/index.js"></script>
+
 </body>
 
 </html>
