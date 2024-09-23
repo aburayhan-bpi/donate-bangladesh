@@ -36,21 +36,24 @@ function multiDonate(inputBalanceId, donatedBalanceId, modalId, title) {
     document.getElementById(modalId).showModal();
 
     // create history
-    
+
     const donateTitle = document.getElementById(title).innerText;
-    
+
     const historySection = document.getElementById('history-section');
-    
+
+    // current date
+    const date = new Date();
+    const fullDate = date.toString();
+
     const div = document.createElement('div');
     div.innerHTML = `
     <div class="rounded-xl p-6 border-2 border-gray-400">
     <div class="space-y-4">
     <h2 class="font-bold text-lg">${inputBalance} Taka is ${donateTitle}</h2>
-                    <p class="text-subtitle text-sm">Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard
-                        Time)</p>
+                    <p class="text-subtitle text-sm">Date : ${fullDate}</p>
                 </div>
             </div>
-            
+
             `
     historySection.appendChild(div);
     document.getElementById(inputBalance).value = "";
