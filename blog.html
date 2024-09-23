@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=	">
+    <title>About - DOM</title>
+    <!-- Tailwind css -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        subtitle: '#111111B3',
+                    },
+                    backgroundColor: {
+                        primary: '#B4F461',
+                        donated: '#1111110D',
+                    },
+                    fontFamily: {
+                        lexend: ['Lexend', 'system-ui'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-lexend">
+
+    <header class="sticky top-0  backdrop-blur-md">
+        <!-- Navbar start -->
+        <div class="bg-[#f9f7f394] pt-4 pb-7 backdrop-blur-md">
+            <div class="navbar w-10/12 mx-auto flex flex-col md:flex-row justify-between">
+                <div class="navbar-start order-2 md:order-none mt-4 md:mt-0 justify-center md:justify-start">
+                    <a href="index.html" class="md:w-3/6 lg:w-2/6 xl:w-1/6">
+                        <button class="btn bg-primary font-bold text-base">Home</button>
+                    </a>
+                </div>
+                <div class="navbar-center order-1 md:order-none">
+                    <div class="flex gap-3 items-center">
+                        <img src="assets/logo.png" alt="logo">
+                        <h2 class="font-bold">Donate Bangladesh</h2>
+                    </div>
+                </div>
+                <div class="navbar-end order-3 md:order-none mt-4 md:mt-0 justify-center md:justify-end">
+                    <!-- main balance -->
+                    <div class="flex gap-2 items-center">
+                        <img src="assets/coin.png" alt="coin">
+                        <p class="text-xl"><span id="mainBalance">5500</span> BDT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar end -->
+    </header>
+
+
+    <main>
+        <section class="">
+            <div>
+                <h2>Frequently Asked Questions <i class="fa-solid fa-question"></i></h2>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+                <div class="collapse-content">
+                    <p>hello</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
