@@ -1,5 +1,3 @@
-
-
 // common functions
 function getTextNumber(id) {
     return Number(document.getElementById(id).innerText);
@@ -70,9 +68,6 @@ document.getElementById('donateBtn2').addEventListener('click', function () {
 document.getElementById('donateBtn3').addEventListener('click', function () {
     multiDonate('inputBalance3', 'donatedBalance3', 'my_modal_3', 'donateTitle3');
 });
-
-
-
 
 
 // Toggle section
