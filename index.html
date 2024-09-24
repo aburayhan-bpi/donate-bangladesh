@@ -35,9 +35,9 @@
 
 </head>
 
-<body class="font-lexend">
+<body class="font-lexend min-h-screen flex flex-col">
     <!-- Header section start -->
-    <header class="sticky top-0 backdrop-blur-md">
+    <header class="sticky top-0 z-50 backdrop-blur-md">
         <!-- Navbar start -->
         <div class="bg-[#f9f7f394] pt-4 pb-7 backdrop-blur-md">
             <div class="navbar w-10/12 mx-auto flex flex-col md:flex-row justify-between">
@@ -76,8 +76,8 @@
         <!-- Toggle menu end-->
     </header>
     <!-- Header section end -->
-    <main>
-        <section id="donation-section" class="w-9/12 mx-auto mb-5">
+    <main class="flex-grow">
+        <section id="donation-section" class="w-9/12 mx-auto ">
             <!-- Cards section start -->
             <!-- card 1 -->
             <div class="flex flex-col mx-auto mt-6 p-6 rounded-xl border border-gray-200">
@@ -246,13 +246,13 @@
 
         </section>
         <!-- History section end hidden -->
-        <footer class="bg-[#f9f7f394] h-20 mt-16 bottom-0">
-
-        </footer>
     </main>
 
-    <script src="js/index.js"></script>
+    <footer class="w-full h-20 bg-[#f9f7f394] mt-16">
 
+    </footer>
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>

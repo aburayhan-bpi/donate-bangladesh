@@ -78,6 +78,7 @@ document.getElementById('donateBtn3').addEventListener('click', function () {
 // Toggle section
 const donationTab = document.getElementById('donateToggleBtn');
 const historyTab = document.getElementById('historyToggleBtn');
+// const footerSection = document.getElementById('footer');
 
 historyTab.addEventListener('click', function () {
     historyTab.classList.remove('bg-white');
@@ -85,6 +86,7 @@ historyTab.addEventListener('click', function () {
         "bg-[#B4F461]",
         "text-black"
     );
+
     donationTab.classList.remove("bg-primary");
     donationTab.classList.add(
         "border-gray-400",
