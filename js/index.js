@@ -1,6 +1,6 @@
 
 
-// Shared functions
+// common functions
 function getTextNumber(id) {
     return Number(document.getElementById(id).innerText);
 }
@@ -9,14 +9,14 @@ function getNumber(id) {
     return Number(document.getElementById(id).value);
 }
 
-// this is common function
+// this is another common function
 function multiDonate(inputBalanceId, donatedBalanceId, modalId, title) {
 
     const mainBalance = getTextNumber('mainBalance');
     const inputBalance = getNumber(inputBalanceId);
     const donatedBalance = getTextNumber(donatedBalanceId);
 
-    // Validation
+    // validation
     if (isNaN(inputBalance) || inputBalance <= 0) {
         alert('Invalid input');
         return;
@@ -31,14 +31,11 @@ function multiDonate(inputBalanceId, donatedBalanceId, modalId, title) {
     // new balnce
     const remainBalance = mainBalance - inputBalance;
     document.getElementById('mainBalance').innerText = remainBalance;
-
     // show modal
     document.getElementById(modalId).showModal();
 
     // create history
-
     const donateTitle = document.getElementById(title).innerText;
-
     const historySection = document.getElementById('history-section');
 
     // current date
@@ -49,14 +46,15 @@ function multiDonate(inputBalanceId, donatedBalanceId, modalId, title) {
     div.innerHTML = `
     <div class="rounded-xl p-6 border-2 border-gray-400">
     <div class="space-y-4">
-    <h2 class="font-bold text-lg">${inputBalance} Taka is ${donateTitle}</h2>
-                    <p class="text-subtitle text-sm">Date : ${fullDate}</p>
+    <h2 class="font-bold text-lg">${inputBalance} Taka is donated for ${donateTitle}</h2>
+                    <p class="text-subtitle text-sm w-full bg-gray-100 p-2 rounded-md">Date : ${fullDate}</p>
                 </div>
             </div>
 
             `
     historySection.appendChild(div);
-    document.getElementById(inputBalance).value = "";
+    // clear the input field after donate
+    document.getElementById(inputBalanceId).value = "";
 }
 
 // donate card 1

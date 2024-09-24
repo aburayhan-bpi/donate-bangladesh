@@ -37,20 +37,19 @@
 
 <body class="font-lexend">
     <!-- Header section start -->
-    <!-- sticky top-0 bg-[#F9F7F3]/50 backdrop-blur-md -->
-    <header class="sticky top-0  backdrop-blur-md">
+    <header class="sticky top-0 z-10 backdrop-blur-md">
         <!-- Navbar start -->
         <div class="bg-[#f9f7f394] pt-4 pb-7 backdrop-blur-md">
             <div class="navbar w-10/12 mx-auto flex flex-col md:flex-row justify-between">
                 <div class="navbar-start order-2 md:order-none mt-4 md:mt-0 justify-center md:justify-start">
                     <a href="index.html" class="md:w-3/6 lg:w-2/6 xl:w-1/6">
-                        <button class="btn bg-primary font-bold text-base">Blog</button>
+                        <button class="btn bg-primary font-bold text-base">Home</button>
                     </a>
                 </div>
                 <div class="navbar-center order-1 md:order-none">
                     <div class="flex gap-3 items-center">
                         <img src="assets/logo.png" alt="logo">
-                        <h2 class="font-bold">Donate Bangladesh</h2>
+                        <h2 class="font-extrabold">Donate Bangladesh</h2>
                     </div>
                 </div>
                 <div class="navbar-end order-3 md:order-none mt-4 md:mt-0 justify-center md:justify-end">
@@ -66,6 +65,7 @@
     </header>
     <!-- Header section end -->
     <main>
+        <!-- FAQ section start -->
         <section id="donation-section" class="w-10/12 mx-auto mt-10 space-y-3">
             <h2 class="font-bold text-2xl">Frequently Asked Questions<span class="font-bold text-4xl italic">?</span>
             </h2>
@@ -100,7 +100,9 @@
                 <div class="collapse-title text-xl font-medium">3. What is event delegation in the context of the DOM,
                     and why is it useful?</div>
                 <div class="collapse-content">
-                    <p>Event delegation is a JavaScript technique where we can add an event listener to a parent element instead of adding event listener to individual elements. When any event is occurs on a child element's it bubble up to his parent.</p>
+                    <p>Event delegation is a JavaScript technique where we can add an event listener to a parent element
+                        instead of adding event listener to individual elements. When any event is occurs on a child
+                        element's it bubble up to his parent.</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow border-2">
@@ -121,8 +123,11 @@
                 </div>
             </div>
         </section>
+        <!-- FAQ section end -->
 
+        <footer class="bg-[#f9f7f394] h-20 mt-16 bottom-0">
 
+        </footer>
     </main>
 
 
